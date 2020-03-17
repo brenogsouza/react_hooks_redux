@@ -1,7 +1,7 @@
 import * as Actions from '../actions';
 
 const INITIAL_STATE = {
-  data: ["React", "React Native", "Redux", "Saga"]
+  data: ["React", "React Native", "Redux", "Saga", "HTML 5"]
 };
 
 

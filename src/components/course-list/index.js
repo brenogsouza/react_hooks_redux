@@ -1,17 +1,16 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import addCourseAction from '../store/actions/course.actions';
+import addCourseAction, { ADD_COURSE } from '../store/actions/course.actions';
 
 
 export const CourseList = () => {
-    const qty = 3
 
-    const courses = useSelector(state => state.data.slice(0, qty),[qty]);
+    const courses = useSelector(({course}) => course.data);
     const dispatch = useDispatch() 
 
 
     function addCourse(){
-        dispatch(addCourseAction('novo curso'))
+        dispatch({type: ADD_COURSE, title: 'ola mundo'})
     }
 
     return (
