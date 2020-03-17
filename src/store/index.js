@@ -1,6 +1,7 @@
 import { createStore } from 'redux';
-import course from './reducers'
+import appReducers from '../components/store/reducers';
 
-const store = createStore(course);
+
+const store = createStore(appReducers);
 
 export default store;

@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import {addCourseAction} from '../../store/actions'
+import addCourseAction from '../store/actions/course.actions';
+
 
 export const CourseList = () => {
     const qty = 3
